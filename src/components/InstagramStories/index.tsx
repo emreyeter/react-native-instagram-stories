@@ -227,7 +227,7 @@ const InstagramStories = forwardRef<InstagramStoriesPublicMethods, InstagramStor
       </ScrollView>
       <StoryModal
         ref={modalRef}
-        stories={data}
+        stories={data.filter(({ stories })=>stories.length>0)} 
         seenStories={seenStories}
         duration={animationDuration}
         storyAvatarSize={storyAvatarSize}

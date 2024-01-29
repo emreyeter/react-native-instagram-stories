@@ -158,6 +158,10 @@ const StoryModal = forwardRef<StoryModalPublicMethods, StoryModalProps>( ( {
 
         scrollTo( previousUserId.value );
 
+      } else {
+        
+        startAnimation();
+        
       }
 
     } else {
